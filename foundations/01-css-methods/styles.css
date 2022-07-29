@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+    display: flex;
+}
+
+
+#red {
+    background-color: red;
+    color: white ;
+    font-size: 32px;
+    align-items: center;
+    font-weight: bold;
+    /* width: 1132px;
+    height: 204px;
+    align-items: center;
+    align-content: center; */
+
+}
+
+.whitebox {
+    padding: 10px;
+    align-items: center;
+    background-color: white;
+    width: 900px;
+    height: 160px;
+} 

@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+}
+
+.avatar.proportioned {
+    
+    height: auto;
+  width: 300px;
+}
+
+.avatar.distorted {
+    height: 400px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.photos {
+    background-color: aliceblue;
+    width: 860px;
+    height: 820px;
+}

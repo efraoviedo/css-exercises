@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+}
+
+
+.container, p:nth-child(1 ) {
+    background-color: yellow;
+    text-align: center;
+    color: red;
+    font-size: 59px;
+    
+}
+
+p, .text {
+    font-size: 38px;
+}
+
+#box {
+    width: 1300px;
+    height: 500px;
+    background-color: aliceblue;
+}
