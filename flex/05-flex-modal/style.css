@@ -7,12 +7,29 @@ html, body {
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
-  background: #aaa;
+  background: black;
   color: #333;
-  /* I'll give you this one for free lol */
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.empty-box {
+  background-color: #aaa;
+  width: 725px;
+  height: 435px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .modal {
@@ -20,6 +37,10 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+
 }
 
 .icon {
@@ -33,6 +54,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+
+}
+
+.text {
+  width: 418px;
+  margin-bottom: 16px;
+
 }
 
 .close-button {

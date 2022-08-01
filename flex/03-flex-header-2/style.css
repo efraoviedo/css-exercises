@@ -3,15 +3,22 @@ you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
 body {
-  margin: 0;
+  margin-left: 140px;
+  margin-right: 140px;
   background: #eee;
   font-family: Besley, serif;
+  margin-top: 250px;
+  background-color: black;
 }
 
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  height: 75px;
 }
 
 .profile-image {
@@ -38,11 +45,21 @@ button {
 }
 
 a {
-  /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
 }
 
 ul {
   list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
 }
+
+.logolink, .botones {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
