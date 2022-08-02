@@ -1,3 +1,23 @@
+body {
+  background-color: black;
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue-btn {
+  background-color: white;
+  width: 300px;
+  height: 235px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 170px;
+  
+}
+
 #transition-container {
   width: 100vw;
   height: 100vh;
@@ -16,4 +36,18 @@ button {
   font-size: 18px;
   padding: 16px 24px;
   text-align: center;
+  transition: transform .1s; 
+
+}
+
+button:hover {
+  transform: scale(1.15);
+} 
+
+h5 {
+  transition: transform .1s; 
+}
+
+h5:hover {
+  transform: scale(1.15);
 }
