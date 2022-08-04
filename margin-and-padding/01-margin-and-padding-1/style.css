@@ -1,28 +1,51 @@
 body {
   max-width: 600px;
   margin: 0 auto;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  background-color: black;
+   
 }
+
+
+.Boxes {
+   margin-top: 145px;
+   width: 845px;
+   height: 336px;
+   background-color: white;
+   font-size: 20px;
+   
+} 
 
 .one {
   background: pink;
   border: 3px solid blue;
-  /* CHANGE ME */
-  padding: 0px;
-  margin: 0px;
+  padding: 30px;
+  margin: 13px;
+  width: 450px;
+  margin-left: 180px;
 }
 
 .two {
   background: lightblue;
   border: 3px solid purple;
-  /* CHANGE ME */
-  margin-bottom: 0px;
+ width: 540px;
+  margin-left: 167px;
 }
 
 .three {
   background: peachpuff;
   border: 3px solid brown;
   width: 200px;
-  /* CHANGE ME */
-  padding: 0px;
-  margin-left: 0px;
+  
 }
+
+div.three {
+  align-items: center;
+  justify-content: start;
+  padding: 35px;
+  margin-left: 435px;
+  margin-top: 50px;
+} 

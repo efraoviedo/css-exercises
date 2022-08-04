@@ -1,27 +1,92 @@
 body {
   background: #eee;
   font-family: sans-serif;
+  background-color: black;
+}
+
+.black-board {
+  width: 1318px;
+  height: 580px;
+  background: hsl(0, 0%,90%);
+  margin: 16px auto;
+  padding:4px;
+  /* text-align: left; */
+  font-size: 22px;
+  gap:8px;
+  border-color: blue;
+
+}
+
+.carta {
+  width: 855px;
+  height: 480px;
+  background: white;
+  margin: 16px auto;
+  text-align: left;
+  font-size: 22px;
+  gap:8px;
+  border-color: blue;
+
 }
 
 .card {
-  width: 400px;
-  background: #fff;
+  width: 815px;
+  height: 400px;
+  background: white;
   margin: 16px auto;
+  padding: 10px;
+  text-align: left;
+  gap:8px;
+  border-color: blue;
+
 }
 
 .title {
   background: #e3f4ff;
+  padding: 9px;
+  height: 70px;
+  margin-top: 0;
+  font-size: 36px;
 }
 
-.content {
+ h1{
+  margin-top: 18px;
+  background-color: white ;
+}
+
+.content{
   background: #e3f4ff;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 32px;
+  height: 128px;
+  font-family: sans-serif;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  
 }
 
 .button-container {
   background: #e3f4ff;
+  font-size: 34px;
+  font-weight: bold;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* margin-bottom: 3px; */
+  margin-top: 50px;
+  height: 138px;
+  margin-bottom: 95px;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  font-size: 23px;
+  padding: 25px;
+  font-weight: bold;
+  
 }
