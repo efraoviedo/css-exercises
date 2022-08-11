@@ -1,5 +1,4 @@
 body, html {
-  /* height: 100%; */
   margin: 0;
   background-color: black;
   font-size: 4px;
@@ -10,7 +9,6 @@ body, html {
   text-align: center;
   height: 610px;
   width: 910px;
-  /* padding: 1px; */
   box-sizing: border-box;
   place-content: center; 
   background-color: white;
@@ -34,9 +32,8 @@ body, html {
 
 .header {
   background-color: #FFDE22;
-  height: 30px;
+  height: 49px;
   margin-bottom: 3px;
-  /* font-size: 4px; */
 }
 
 #sinavar {
@@ -46,11 +43,9 @@ body, html {
   width: 910px;
   height: 500px;
   margin-bottom: 3px;
-  /* padding: 1px; */
 }
 
 .navar {
-  /* width: 990px; */
   display: flex1;
   place-items: center;
   justify-content: center;

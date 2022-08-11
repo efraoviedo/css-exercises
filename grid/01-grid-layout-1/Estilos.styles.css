@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    gap:8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: center;
+    background-color: black;
+} 
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    display: inline-grid;
+    grid-template: 73px 75px 270px 40px 90px 78px / 225px 600px 40px 80px 40px;
+    background-color: rgb(236, 241, 243); 
+    grid-template-areas:
+      "living-room living-room living-room living-room living-room"
+      "bedroom bathroom bathroom bathroom bathroom"
+      "bedroom  kitchen kitchen kitchen kitchen"
+      "bedroom  kitchen kitchen kitchen kitchen"
+      "bedroom  kitchen kitchen kitchen kitchen"
+      "closet closet closet closet closet "    
+      "closet closet closet closet closet " 
+
+  }
+
+p {
+    font-size: 13px;
+    margin: 50px 5px 25px 5px;
+    text-align: left;
+    background-color: #bccbde;
+
+
+}  
+  .container > div {
+    border: 1px solid #faf6f6
+  }
+  
+  .room {
+    border: 1px solid;
+    font-size: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #living-room {
+     grid-area:  living-room;
+    border-radius: 18px;
+    background-color:  #FFDE22;
+    color: aliceblue;
+
+  }
+
+  #kitchen {
+
+    grid-area: kitchen;
+    color: white;
+    border-radius: 18px;
+    background-color: #bccbde;
+  }
+  
+  #bedroom {
+    color: aliceblue;
+    grid-area: bedroom;
+    border-radius: 18px;
+    background-color: #FF7755;
+
+  }
+  
+  #bathroom {
+    color: aliceblue;
+    grid-area: bathroom;
+    border-radius: 18px;
+background-color: #00DDFF;
+  }
+  
+  #closet {
+    color: aliceblue;
+    grid-area: closet;
+    border-radius: 18px;
+    background-color: #393f4d;
+
+  }
+  
