@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    gap:6px;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    justify-content: center;
+    background-color: black;
+} 
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    resize: both;
+    overflow: auto;
+    display: grid;
+flex-wrap: wrap;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, minmax(150px, 200px));
+
+
+
+    grid-template: 73px 75px 270px 40px 90px 78px / 75px 215px 5px 20px 15px;
+    background-color: rgb(236, 241, 243); 
+    grid-template-areas:
+      "living-room living-room living-room living-room living-room"
+      "bedroom bathroom bathroom bathroom bathroom"
+      "bedroom  kitchen kitchen kitchen kitchen"
+      "bedroom  kitchen kitchen kitchen kitchen"
+      "bedroom  kitchen kitchen kitchen kitchen"
+      "closet closet closet closet closet "    
+      "closet closet closet closet closet "
+       
+
+  }
+
+  /* #living-room {
+    font-size: 29PX;
+    color: red;
+    background-color: violet;
+  } */
+
+p {
+    font-size: 10px;
+    margin: 18px 5px 25px 5px;
+    text-align: left;
+    background-color: #bccbde;
+
+
+}  
+  .container > div {
+    border: 1px solid #faf6f6
+  }
+  
+  .room {
+    border: 2px solid;
+    font-size: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    min-width: 75px;
+  }
+  
+  #living-room {
+     grid-area:  living-room;
+    border-radius: 15px;
+    background-color:  #FFDE22;
+    color: aliceblue;
+    font-size: 25px;
+  }
+
+  #kitchen {
+
+    grid-area: kitchen;
+    color: white;
+    border-radius: 15px;
+    background-color: #bccbde;
+  }
+  
+  #bedroom {
+    color: aliceblue;
+    grid-area: bedroom;
+    border-radius: 15px;
+    background-color: #FF7755;
+
+  }
+  
+  #bathroom {
+    color: aliceblue;
+    grid-area: bathroom;
+    border-radius: 15px;
+background-color: #00DDFF;
+  }
+  
+  #closet {
+    color: aliceblue;
+    grid-area: closet;
+    border-radius: 15px;
+    background-color: #393f4d;
+
+  }
+  
