@@ -1,67 +1,145 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Century Gothic;
+  
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: black;
 }
 
 .container {
   text-align: center;
+  display: inline-grid;
+  grid-template-rows: 39px  36px  20px  430px  43px  43px  40px  50px  500px  630px;
+  grid-template-columns:  160px 500px 40px 40px 40px;
+  background-color: rgb(236, 241, 243); 
+  grid-template-areas:
+    "header header header header header"
+    "sidebar nav nav nav  nav"
+    "sidebar article article article article"
+    "sidebar article article article article"
+    "sidebar article article article article"
+    "sidebar article article article article"
+    "footer   footer footer footer footer " 
+
 }
 
 .container div {
-  padding: 15px;
-  font-size: 32px;
+  padding: 5px;
+  font-size: 66x;
   font-family: Helvetica;
   font-weight: bold;
   color: white;
+  border-color: white;
+
 }
 
 .header {
+  grid-area: header;
   background-color: #393f4d;
+  display: inline-grid;
+  grid-template-columns: 260px 120px 120px 120px 120px;
+  grid-template-rows: 160px;
+  padding: 2px;
+  text-align: start;
+  border-bottom: 2px solid #FFFFFF;
+}
+ 
+.links {
+  font-size: 9px;
 }
 
-.menu ul,
-.menu li {
+.menu {
   font-size: 16px;
+  display: grid;
 }
 
 .sidebar {
+  grid-area: sidebar;
   background-color: #FF7755;
+  border-bottom-color: antiquewhite;
+  display: grid;
+  gap: 28px;
+  border-bottom: 2px solid #FFFFFF;
+
 }
 
+.sidebar > div {
+  border-color: 5px solid white;
+border-right: #FFFFFF;
+font-size: 8px;
+
+}
+ 
 .sidebar .photo {
   background-color: white;
   color: black;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: normal;
   border-radius: 10px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  margin: 2px;
+  height: 120px;
 }
 
 
 .sidebar .side-content {
   background-color: white;
   color: black;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: normal;
+  padding: 17px;
+  gap:37px;
+  height: 80px;
+
 }
 
 .nav {
+  grid-area: nav;
   background-color: #FF7755;
+border-left: 2px solid #FFFFFF;
 }
 
-.nav ul li {
-  font-size: 16px;
+
+.nav .texto {
+  font-size: 10px;
+  border-color: white;
   text-transform: uppercase;
+  display: inline-grid;
+  color: white;
+  padding: 0px;
+  display: inline-grid;
+  grid-template-columns: 159px 22px 14px;
+  grid-template-rows: 32px;
+  text-align: center;
+
 }
 
 .article {
+  grid-area: article;
   background-color: #bccbde;
+  gap: 10px;
+  display: grid;
+  grid-template-rows: repeat(4, 4fr);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 4fr));
+   width: clamp(500px, 98%, 1000px);
+   border-bottom: 3px solid #FFFFFF;
+
 }
 
+
+
 .article p {
-  font-size: 18px;
   font-family: sans-serif;
   color: white;
   text-align: left;
+  padding: 5px;
 }
 
 .article .card {
@@ -73,15 +151,16 @@
 .card p {
   color: black;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 9px;
 }
 
 .card .title {
-  font-size: 18px;
+  font-size: 12px;
   text-align: center;
 }
 
 .footer {
+  grid-area: footer;
   background-color: #393f4d;
 }
 
