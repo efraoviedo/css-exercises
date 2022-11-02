@@ -41,11 +41,12 @@ button {
 }
 
 button:hover {
-  transform: scale(1.15);
+  transform: scale(1.25);
+  transition-duration: .5s;
 } 
 
 h5 {
-  transition: transform .1s; 
+  transition: transform .2s; 
 }
 
 h5:hover {
